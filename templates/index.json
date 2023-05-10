@@ -211,10 +211,10 @@
         "template--16792327684322__7ea5184b-c90d-438d-b079-8ca1d99edff0-1683754819d8490cbf-5"
       ],
       "settings": {
-        "slide_id": "anID",
+        "slide_id": "cards",
         "cards_bg": "#dddddd",
         "slide_autoplay": false,
-        "show_btn": true,
+        "show_btn": false,
         "show_dots": true,
         "is_infinite": true,
         "slide_speed": 2500,
