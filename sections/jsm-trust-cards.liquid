@@ -9,6 +9,9 @@
 {% assign slide_time = section.settings.slide_time %}
 {% assign slides_to_show = section.settings.slides_to_show %}
 
+
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{ 'slick-theme.css' | asset_url | stylesheet_tag }}
 {{ 'jsm-trust-cards.css' | asset_url | stylesheet_tag }}
 
 
@@ -73,6 +76,12 @@
         {% endfor %}
     </div>
 </div>
+
+
+
+<script src="{{ 'jquery-3.3.1.js' | asset_url }}"></script>
+<script src="{{ 'slick.min.js' | asset_url }}"></script>
+
 
 {% schema %}
 {
