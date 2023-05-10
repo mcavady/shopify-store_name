@@ -8,7 +8,8 @@
 {% assign slide_autoplay = section.settings.slide_autoplay %}
 {% assign slide_time = section.settings.slide_time %}
 {% assign slides_to_show = section.settings.slides_to_show %}
-
+<script src="{{ 'jquery-3.3.1.js' | asset_url }}"  ></script>
+<script src="{{ 'slick.min.js' | asset_url }}"  ></script>
 
 {{ 'slick.css' | asset_url | stylesheet_tag }}
 {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
@@ -55,7 +56,7 @@
                                 {% assign num = block.settings.stars %}
                             
                                 {% tablerow i in (1..num) %}
-                                    {%  render "icon-star" %}
+                                    {%  render "jsm-icon-star" %}
                                 {% endtablerow %}
                         </div>
                         
@@ -79,8 +80,7 @@
 
 
 
-<script src="{{ 'jquery-3.3.1.js' | asset_url }}"></script>
-<script src="{{ 'slick.min.js' | asset_url }}"></script>
+
 
 
 {% schema %}

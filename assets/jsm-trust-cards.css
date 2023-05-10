@@ -35,6 +35,9 @@
 .jsm-trust-cards .usps .usp .icon {
   padding-right: 25px;
 }
+.jsm-trust-cards .usps .usp .icon img {
+  width: 50px;
+}
 .jsm-trust-cards .usps .usp .text {
   max-width: 165px;
 }
